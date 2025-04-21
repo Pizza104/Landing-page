@@ -2,65 +2,35 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Seções */
+body {
+    padding-top: 56px;
+}
+
 section {
-    padding-top: 80px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    padding: 60px 0;
 }
 
-#home {
-    background: url("https://via.placeholder.com/1920x1080") center center no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-.scroll-btn {
-    margin-top: 30px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-/* Navbar scroll */
-nav.scrolled {
-    background-color: #333 !important;
+.navbar {
     transition: background-color 0.3s;
 }
 
-/* Cards */
+.navbar.scrolled {
+    background-color: #343a40 !important;
+}
+
 .card {
     transition: transform 0.3s;
-    height: 100%;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
-/* Carousel */
-.carousel {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#integrantes .card {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    min-height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#integrantes .card-title {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 0;
+footer {
+    background-color: #343a40;
 }
