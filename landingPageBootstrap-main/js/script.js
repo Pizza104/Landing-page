@@ -1,7 +1,7 @@
-$(window).scroll(function () {
+$(window).scroll(function() {
     if ($(this).scrollTop() > 50) {
-        $("nav").addClass("scrolled");
+        $('nav').addClass('scrolled');
     } else {
-        $("nav").removeClass("scrolled");
+        $('nav').removeClass('scrolled');
     }
 });
